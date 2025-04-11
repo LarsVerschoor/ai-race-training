@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe Handpose</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script defer type="module" src="./src/js/index.js"></script>
+</head>
+
+<body>
+
+<section>
+    <h1>Handpose detection</h1>
+    <button id="startwebcam">STARTWEBCAM</button>
+    <button id="trainleft" disabled>TRAIN LEFT</button>
+    <button id="trainright" disabled>TRAIN RIGHT</button>
+    <button id="trainbrake" disabled>TRAIN BRAKE</button>
+    <button id="trainaccelerate" disabled>TRAIN ACCELERATE</button>
+    <button id="export">Export training data</button>
+    <button id="reset">Reset training data</button>
+    <div id="videoContainer">
+        <div style="position: relative;">
+            <video id="webcam" style="position: absolute;" muted autoplay playsinline></video>
+            <canvas id="canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
